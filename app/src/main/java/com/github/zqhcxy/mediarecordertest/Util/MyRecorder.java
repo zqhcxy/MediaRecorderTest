@@ -30,11 +30,6 @@ public class MyRecorder {
     private RecordingState recordingState;// 录音监听接口
     private Runnable runnable;
     private Handler mTimeHandler = new Handler();
-//    {
-//        @Override
-//        public void handleMessage(Message msg) {
-//        }
-//    };
 
     public MyRecorder(Context context, int limitTime) {
         mContext = context;
@@ -59,8 +54,9 @@ public class MyRecorder {
             //设置MediaRecorder录制音频的采样率
             recorder.setAudioSamplingRate(SAMPLE_RATE_IN_HZ);
 
-            audioPath = PATH_NAME + audioName;
+
             audioName = new Date().getTime() + ".amr";
+            audioPath = PATH_NAME + audioName;
             File tmp = new File(audioPath);
             File parentFile = tmp.getParentFile();
             if (!parentFile.exists()) {
