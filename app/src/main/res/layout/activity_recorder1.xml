@@ -17,20 +17,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="00:00:00"/>
+        android:text="00:00"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true">
 
-        <!--<TextView-->
-            <!--android:id="@+id/recorder1_pouse_tv"-->
-            <!--style="@style/MyTextStyle"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_toLeftOf="@+id/recorder1_recorder_iv"-->
-            <!--android:text="暂停"/>-->
+        <TextView
+            android:id="@+id/recorder1_cancle_tv"
+            style="@style/MyTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/recorder1_recorder_iv"
+            android:text="取消"/>
 
         <ImageView
             android:id="@+id/recorder1_recorder_iv"
