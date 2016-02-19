@@ -15,15 +15,15 @@
         style="@style/MyTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="录音功能1"
+        android:text="录音功能"
         />
 
-    <Button
-        android:id="@+id/bt2"
-        style="@style/MyTextStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bt1"
-        android:text="录音功能2"/>
+    <!--<Button-->
+        <!--android:id="@+id/bt2"-->
+        <!--style="@style/MyTextStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/bt1"-->
+        <!--android:text="录音功能2"/>-->
 
 </RelativeLayout>

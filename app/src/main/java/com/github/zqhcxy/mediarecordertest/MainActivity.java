@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void findView() {
         Button bt1 = (Button) findViewById(R.id.bt1);
-        Button bt2 = (Button) findViewById(R.id.bt2);
+//        Button bt2 = (Button) findViewById(R.id.bt2);
 
         //点击进行录音界面
         bt1.setOnClickListener(new View.OnClickListener() {
@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        //长按进行录音界面
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        //长按进行录音界面
+//        bt2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
     }
 
     private void initData() {
