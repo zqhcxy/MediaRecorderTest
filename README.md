@@ -10,18 +10,18 @@
     AMR格式:压缩比比较大，相对其他格式的压缩质量比较差，多用于人生，通话录音。
 3、主要代码:
 >```java
->            recorder = new MediaRecorder();
->            // 设置MediaRecorder的音频源为麦克风
->            recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
->            // 设置MediaRecorder录制的音频格式
->             /* 设置输出文件的格式：THREE_GPP/MPEG-4/RAW_AMR/Default
->                 *THREE_GPP(3gp格式，H263视频/ARM音频编码)、MPEG-4、RAW_AMR(只支持音频且音频编码要求为AMR_NB)
->                 */
->            recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
->            /* 设置音频文件的编码：AAC/AMR_NB/AMR_MB/Default */
->            recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
->            //设置MediaRecorder录制音频的通道数
->            recorder.setAudioChannels(2);
->            //设置MediaRecorder录制音频的采样率
->            recorder.setAudioSamplingRate(SAMPLE_RATE_IN_HZ);
+            recorder = new MediaRecorder();
+            // 设置MediaRecorder的音频源为麦克风
+            recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+            // 设置MediaRecorder录制的音频格式
+             /* 设置输出文件的格式：THREE_GPP/MPEG-4/RAW_AMR/Default
+                 *THREE_GPP(3gp格式，H263视频/ARM音频编码)、MPEG-4、RAW_AMR(只支持音频且音频编码要求为AMR_NB)
+                 */
+           recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+            /* 设置音频文件的编码：AAC/AMR_NB/AMR_MB/Default */
+            recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+            //设置MediaRecorder录制音频的通道数
+            recorder.setAudioChannels(2);
+            //设置MediaRecorder录制音频的采样率
+            recorder.setAudioSamplingRate(SAMPLE_RATE_IN_HZ);
 >```
