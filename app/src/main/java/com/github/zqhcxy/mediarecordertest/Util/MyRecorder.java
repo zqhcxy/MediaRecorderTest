@@ -46,8 +46,11 @@ public class MyRecorder {
             // 设置MediaRecorder的音频源为麦克风
             recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
             // 设置MediaRecorder录制的音频格式
+             /* 设置输出文件的格式：THREE_GPP/MPEG-4/RAW_AMR/Default
+                 *THREE_GPP(3gp格式，H263视频/ARM音频编码)、MPEG-4、RAW_AMR(只支持音频且音频编码要求为AMR_NB)
+                 */
             recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-            // 设置MediaRecorder录制音频的编码为amr.
+            /* 设置音频文件的编码：AAC/AMR_NB/AMR_MB/Default */
             recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
             //设置MediaRecorder录制音频的通道数
             recorder.setAudioChannels(2);
